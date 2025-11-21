@@ -1,4 +1,4 @@
-# 🚖 Real-Time Ride Surge Prediction System
+# Real-Time Ride Surge Prediction System
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Kafka](https://img.shields.io/badge/Apache%20Kafka-3.0+-red.svg)](https://kafka.apache.org/)
@@ -7,7 +7,7 @@
 
 A comprehensive Big Data Analytics project that predicts ride-hailing surge pricing in real-time using Machine Learning, Apache Kafka for stream processing, and Hadoop for distributed data analysis.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -18,7 +18,7 @@ A comprehensive Big Data Analytics project that predicts ride-hailing surge pric
 - [Project Structure](#project-structure)
 - [Model Performance](#model-performance)
 
-## 🎯 Overview
+## Overview
 
 This project implements an end-to-end pipeline for predicting surge pricing multipliers in ride-hailing services. By analyzing historical ride data combined with weather conditions and temporal patterns, the system predicts surge events with **91% ROC AUC** and processes predictions in real-time using Apache Kafka.
 
@@ -29,7 +29,7 @@ This project implements an end-to-end pipeline for predicting surge pricing mult
 - **Scalable Design**: Hadoop MapReduce for distributed data analysis
 - **Production Ready**: Optimized for low latency (<50ms per prediction)
 
-## ✨ Features
+## Features
 
 ### Machine Learning
 - **XGBoost Classification**: Binary surge detection with probability scores
@@ -47,7 +47,7 @@ This project implements an end-to-end pipeline for predicting surge pricing mult
 - **Weather Integration**: Rain and wind impact on surge pricing
 - **Feature Importance**: Top predictors identified (cab type, location, time)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐
@@ -82,7 +82,7 @@ This project implements an end-to-end pipeline for predicting surge pricing mult
                          └──────────────┘
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technologies |
 |----------|-------------|
@@ -92,7 +92,7 @@ This project implements an end-to-end pipeline for predicting surge pricing mult
 | **Visualization** | Matplotlib, Seaborn |
 | **Streaming** | kafka-python |
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -133,7 +133,7 @@ Place your datasets in the project directory:
 - `Datasets/cab_rides.csv` (693K+ records)
 - `Datasets/weather.csv` (6K+ records)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 5-Minute Setup Guide
 
@@ -186,7 +186,7 @@ python kafka_consumer.py
 python kafka_producer.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ride-surge-prediction/
@@ -204,7 +204,7 @@ ride-surge-prediction/
 └── README.md                  # This file
 ```
 
-## 📊 Model Performance
+## Model Performance
 
 ### Classification Metrics
 
@@ -240,4 +240,3 @@ Surge          144      433
 3. **source_surge_tendency** (3.1%) - Historical location surge
 4. **wind** (2.9%) - Weather conditions
 5. **temp** (1.6%) - Temperature
-
